@@ -27,12 +27,13 @@ import {DemoFormSkuBuilder} from "./forms/demo_form_sku_with_builder";
  */
 @Component({
   selector: 'forms-demo-app',
-  directives: [DemoFormSku, DemoFormSkuBuilder],
+  directives: [DemoFormSku, DemoFormSkuBuilder, DemoFormWithExplicitValidations],
   template: `
-<div>
-  <demo-form-sku></demo-form-sku>
-  <demo-form-sku-builder></demo-form-sku-builder>
-</div>
+    <div>
+      <demo-form-sku></demo-form-sku>
+      <demo-form-sku-builder></demo-form-sku-builder>
+      <demo-form-with-explicit-validations></demo-form-with-explicit-validations>
+    </div>
   `
 })
 class FormsDemoApp {
