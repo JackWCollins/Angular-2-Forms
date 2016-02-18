@@ -19,18 +19,19 @@ require('../images/favicon.ico');
 /* 
  * Our Demos
  */
-import {DemoFormSku} from
-  './forms/demo_form_sku';
+import {DemoFormSku} from './forms/demo_form_sku';
+import {DemoFormSkuBuilder} from "./forms/demo_form_sku_with_builder";
 
 /*
  * Webpack
  */
 @Component({
   selector: 'forms-demo-app',
-  directives: [DemoFormSku],
+  directives: [DemoFormSku, DemoFormSkuBuilder],
   template: `
 <div>
   <demo-form-sku></demo-form-sku>
+  <demo-form-sku-builder></demo-form-sku-builder>
 </div>
   `
 })
