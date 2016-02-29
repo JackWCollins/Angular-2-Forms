@@ -24,13 +24,20 @@ import {DemoFormSkuBuilder} from "./forms/demo_form_sku_with_builder";
 import {DemoFormWithExplicitValidations} from "./forms/demo_form_with_explicit_validations";
 import {DemoFormWithShorthandValidations} from "./forms/demo_form_with_shorthand_validations";
 import {DemoFormWithCustomValidations} from "./forms/demo_form_with_custom_validations";
+import {DemoFormWithEvents} from "./forms/demo_form_with_events";
 
 /*
  * Webpack
  */
 @Component({
   selector: 'forms-demo-app',
-  directives: [DemoFormSku, DemoFormSkuBuilder, DemoFormWithExplicitValidations, DemoFormWithShorthandValidations, DemoFormWithCustomValidations],
+  directives: [
+    DemoFormSku,
+    DemoFormSkuBuilder,
+    DemoFormWithExplicitValidations,
+    DemoFormWithShorthandValidations,
+    DemoFormWithCustomValidations, DemoFormWithEvents
+  ],
   template: `
     <div>
       <demo-form-sku></demo-form-sku>
@@ -38,6 +45,7 @@ import {DemoFormWithCustomValidations} from "./forms/demo_form_with_custom_valid
       <demo-form-with-explicit-validations></demo-form-with-explicit-validations>
       <demo-form-with-shorthand-validations></demo-form-with-shorthand-validations>
       <demo-form-with-custom-validations></demo-form-with-custom-validations>
+      <demo-form-with-events></demo-form-with-events>
     </div>
   `
 })
